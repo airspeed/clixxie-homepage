@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fotob&uuml;cher im Web erstellen - so einfach wie noch nie!</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="clixxie-csp.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$( '.btn-submit' ).click( function( ev )
+	{
+		var email = $( 'input[type=email]' ).val();
+		if ( email.length )
+			ClixxieCSP.saveEmail( email, function( msg ) {
+				$( '.btn-submit' ).off();
+				$( '.btn-submit' ).addClass( 'submitted' );
+				$( '.btn-submit' ).text( 'Vielen Dank!' );
+				$( 'input[type=email]' ).val( '' );
+		});
+	});
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57297430-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+<div id="header">
+	<div class="container">
+		<div class="full equalize">
+			<div id="header-logo">
+			</div>
+			<!--<div id="header-links">
+				<a href="">Produkt</a>
+				<a href="">So funktioniert&acute;s</a>
+				<a href="">Kontakt</a>
+				<a href="">Impressum</a>
+			</div>-->		
+			<div id="header-socials">
+				<ul>
+					<a target="_blank" href="http://twitter.com/femory"><li><div class="header-social-twitter"></div></li></a>
+					<a target="_blank" href="http://facebook.com/clixxie"><li><div class="header-social-facebook"></div></li></a>
+					<a target="_blank" href="http://instagram.com/clixxie"><li><div class="header-social-instagram"></div></li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row bg-image">
+	<!--<div class="scroller"></div>-->
+	<div class="container">
+		<h1>Vielen Dank für dein Interesse!</h1>
+		<h2 style="padding-top: 24px;">Die Fotobuch-Web-App wird bald fertig sein.</h2>
+		<h3>Du willst informiert werden, wann es losgeht und <br />
+			die App als eine(r) der ersten ausprobieren?<br />
+			Dann trage dich hier ein:</h3>
+		<div class="full" id="email-box">
+			<div class="c70l">
+				<input type="email" placeholder="Deine E-Mail Adresse"/>
+			</div>
+			<div class="c30l">
+				<div class="btn-submit">Abschicken!</div>
+			</div>
+		</div>
+		<div class="full center" style="width: 200px; margin: 0 auto; padding-top: 48px;">
+			<p>Du kannst nicht warten?<br />
+			Probiere schon jetzt unsere mobilen Apps!</p>
+			<div class="c50l" style="padding-top: 16px;"><a href="http://itunes.apple.com/de/app/fotobuch-drucken-im-mini-format/id483429589" class="weiss"><img src="img/clixxie_fotobuch_mobile.png" width="64" height="64" style="margin-bottom: 8px;"/>Fotobuch</a></div>
+			<div class="c50l" style="padding-top: 16px;"><a href="https://itunes.apple.com/de/app/flexiphoto-die-neue-flexible/id652910460?mt=8" class="weiss"><img src="img/clixxie_flexiphoto_mobile.png" width="64" height="64" style="margin-bottom: 8px;"/>Flexiphoto</a></div>
+		</div>
+	</div>
+</div>
+
+
+<a href="http://femory.de"><div id="footer" class="row femory-logo">
+</div></a>
+</body>
+</html>

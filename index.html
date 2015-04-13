@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>clixxie powered by femory</title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+	color: #333333;	
+	font-family: Calibri, Arial, "Helvetica Neue", HelveticaNeue, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height:1.2;
+}
+a { color: #827265;}
+a:hover, a:active { color:#181715;}
+#canvas {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+#break {
+	height: 4px;
+	background-image:url(img/break.gif);
+	background-position: center center;
+	background-repeat:no-repeat;
+}
+#footer {
+	/*height: 330px;*/
+	background-image:url(img/bg_footer.gif);
+	background-position: top left;
+	background-repeat:repeat-x;
+	color: #666666;
+}
+#header {
+	height: 143px;
+}
+#logo {
+	height: 143px;
+	width: 246px;
+	background-image:url(img/logo_clixxie.gif);
+	background-position: center center;
+	background-repeat:no-repeat;
+}
+#poweredby {
+	height: 143px;
+	width: 278px;
+	background-image:url(img/logo_poweredbyfemory.gif);
+	background-position: center center;
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
+#poweredby:hover {
+	background-image:url(img/logo_poweredbyfemory_c.gif);
+}
+#langswitch {
+	position: absolute;
+	right: 45px;
+	top: 10px;
+}
+#comingsoon {
+	width:172px;
+	height:132px;
+	background: url(img/comingsoon-us.png);
+}
+#welcome, #about {
+	width: 680px;
+	margin: 0 auto;
+	margin-bottom: 42px;
+	margin-top: 42px;
+}
+#footer #canvas {
+	width: 680px;
+	margin: 0 auto;
+	padding-bottom: 42px;
+	padding-top: 42px;
+}
+#fotobuch {
+	height: 548px;
+	width: 960px;
+	background-image:url(img/bg_box_photobook_141126.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+}
+#flexiphoto {
+	height: 564px;
+	width: 960px;
+	background-image:url(img/bg_box_flexiphoto_141126-1.jpg);
+	background-repeat:no-repeat;
+	position: relative;
+}
+#box {
+	width: 440px;
+	height: 320px;
+	position: relative;
+}
+#boxtext {
+	/*height: 88px;*/
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+#fotobuch #box {
+	left: 166px;
+	top: 199px;
+}
+#flexiphoto #box {
+	left: 372px;
+	top: 217px;
+}
+#bullets {padding-left: 51px;}
+#stores {
+	margin: 20px auto 0 auto;
+	margin: 20px auto 10px auto;
+	margin: 20px auto 25px auto;
+}
+.w65 { width: 65%; }
+.padlr { margin-left:48px; margin-right: 48px;}
+.martb { margin-top: 42px; margin-bottom: 42px;}
+.subcolumns { display:table; width:100%; table-layout:fixed; }
+.equalize, .equalize .subcolumns { table-layout:fixed; }
+.equalize > div {
+	display:table-cell;
+	float:none; 
+	margin:0; 
+	overflow:hidden;
+	vertical-align:top;
+}
+.fltlft {float: left;}
+.fltrt {float: right;}
+a img, img {border: none;}
+.center {margin: 0 auto; text-align:center;}
+.relative {position: relative;}
+h1, h2, h3, h4, h5, h6 {margin-top: 0; margin-bottom: 0;}
+p {margin-top: 0;}
+h1 {
+	text-size: 36px;
+	line-height: 1;
+	font-weight:100;
+	font-style:italic;
+	padding-bottom: 12px;
+}
+h2 {
+	text-size: 36px;
+	font-weight: 100;
+}
+h2 img { margin-right: 10px;}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55690768-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+	<div id="canvas">
+		<div id="header">
+			<div id="logo" class="fltlft"></div>
+			<div id="langswitch"><a href="http://clixxie.com" title="Visit clixxie.com"><img src="img/gb.png" width="20" height="14" alt="Visit clixxie.com"></a></div>
+			<div id="poweredby" class="fltrt" onclick="javascript:window.location.href='http://femory.de';"></div>
+		</div>
+		<div id="break" class="subcolumns">
+		</div>
+		<div id="welcome">
+			<h1>Im Handumdrehen pers&ouml;nliche Fotoprodukte aus Smartphone-Schnappsch&uuml;ssen machen - mit den einfachen und intuitiven clixxie-Apps von femory.</h1>
+		</div>
+		<div id="break" class="subcolumns">
+		</div>
+		<div id="fotobuch" class="martb">
+			<div id="box">
+				<div class="subcolumns">
+					<h2><img src="img/fotobuch_72_r.png" width="72" height="72" align="middle" />
+					clixxie-fotobuch</h2>
+				</div>
+				<div id="boxtext" class="subcolumns">
+Erstelle dein Fotobuch in nur wenigen Minuten, direkt auf deinem Smartphone oder Tablet. Erh&auml;ltlich in zwei handlichen Formaten mit Softcover. NEU f&uuml;r iOS: square-Format (15 &times; 15 cm).
+				</div>
+				<div id="bullets">
+					<img src="img/bullet.gif" width="31" height="28" align="absmiddle" />Mit deinen Smartphone- oder Tablet-Fotos<br />
+					<img src="img/bullet.gif" width="31" height="28" align="absmiddle" />Hochwertiges Geschenk<br />
+					<img src="img/bullet.gif" width="31" height="28" align="absmiddle" />In wenigen Tagen im Briefkasten<br />
+				</div>
+				<div id="stores"> <a href="http://goo.gl/qekQa"><img src="img/btn_app_appstore.gif" width="112" height="39" hspace="12" /></a> <a href="http://goo.gl/8celQ"><img src="img/btn_app_playstore.gif" width="113" height="39" hspace="12" /></a> <a href="http://goo.gl/r0U8p"><img src="img/btn_app_facebook.gif" width="124" height="39" hspace="12" /></a>
+				</div>
+				<div><br/>Mehr Info: <a href="http://clixxie-fotobuch.de">clixxie-fotobuch Webseite</a></div>
+			</div>
+		</div>
+		<div id="break">
+		</div>
+		<div id="flexiphoto" class="martb">
+			<div id="box">
+				<div class="subcolumns">
+					<h2><img src="img/flexiphoto_72_r.png" width="72" height="72" align="middle" />
+					clixxie-flexiphoto</h2>
+				</div>
+				<div id="boxtext" class="subcolumns">
+Neue Deko für deine W&auml;nde, T&uuml;ren und Fenster: Lass deine Fotos auf eine spezielle elektrostatische Folie drucken, die wie von selbst auf allen glatten Fl&auml;chen haftet – keine Klebespuren, keine L&ouml;cher. 
+				</div>
+				<div id="bullets">
+					<img src="img/bullet.gif" width="31" height="28" align="absmiddle" />Haftet ohne Kleber<br />
+					<img src="img/bullet.gif" width="31" height="28" align="absmiddle" />Spurlos abl&ouml;sbar<br />
+					<img src="img/bullet.gif" width="31" height="28" align="absmiddle" />Immer wieder neu dekorieren<br />
+				</div>
+				<div id="stores" class="w65"> <a href="http://goo.gl/k0Ofu"><img src="img/btn_app_appstore.gif" width="112" height="39"/></a><a href="http://goo.gl/GUhTjR" style="margin-left: 30px;"><img src="img/btn_app_facebook.gif" width="124" height="39" /></a>
+				</div>
+				<!-- YouTube! -->
+				<!--<div>
+					<iframe width="420" height="315" src="//www.youtube.com/embed/brx9coCQy8Y" frameborder="0" allowfullscreen></iframe>
+				</div>-->
+				<div><br/>Mehr Info: <a href="http://clixxie-flexiphoto.de">clixxie-flexiphoto Webseite</a></div>
+			</div>
+		</div>
+		<div id="break">
+		</div>
+		<div id="about">
+			<h1>&Uuml;ber femory</h1>
+			clixxie-flexiphoto und clixxie-fotobuch sind Produkte der femory GmbH &amp; Co. KG mit Sitz in M&uuml;nchen. femory ist spezialisiert auf die Entwicklung intuitiver Foto- und Video-Apps f&uuml;r Smartphones, Tablets und Facebook.
+			<div>Mehr Info auf der <a href="http://femory.de">femory Webseite</a></div>
+		</div>	
+	</div>
+	<div id="footer">
+	<div id="canvas">
+		<h1>Impressum</h1>
+		<p>femory GmbH & Co. KG<br />
+		Fraunhoferstr. 6<br />
+		D-80469 München</p>
+		
+		<p>Geschäftsführung: Dipl.-Kfm. Jan Fischer, Regina Wagner</p>
+		
+		<p>E-Mail: <a href="mailto:kontakt@femory.de">kontakt@femory.de</a><br />
+		Telefon: +49 (0) 89 / 2000079320</p>
+		
+		<p>Umsatzsteueridentifikationsnummer: DE 259672907<br />
+		Amtsgericht München | HRA 91545 | Sitz München</p>
+		</div>
+	</div>
+<div><a href="https://plus.google.com/108754819978118438370" rel="publisher"><!--Google+--></a></div>
+</body>
+</html>
